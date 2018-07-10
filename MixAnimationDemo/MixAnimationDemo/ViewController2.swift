@@ -20,16 +20,12 @@ class ViewController2: UIViewController {
     }
 
     @IBAction func animateButtonTapped(_ sender: UIBarButtonItem) {
-        startAnimate()
+        animateMixView()
     } 
 }
 
 // MARK: - Animate
-extension ViewController2 {
-    func startAnimate() {
-        animateMixView() 
-    }
-    
+extension ViewController2 {    
     private func animateMixView() {
         let tmpCenter = view.center
         UIView.animate(withDuration: animateDuration, delay: 0, options: .layoutSubviews, animations: {
